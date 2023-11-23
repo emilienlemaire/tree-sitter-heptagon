@@ -1,0 +1,13 @@
+(* Types *)
+
+const obstnum : int = 10
+
+(* information on one point on the map *)
+type map_data = { on_road : bool; (* is it on the road? *)
+                  color : color; (* road color *)
+                  max_speed : int; (* maximum allowed speed *)
+                  tl_number : int; (* which traffic light is visible? *)
+                  tl_required : bool; (* should we stop on red traffic light? *)
+                  dir_x : float; (* directing vector, abscissa *)
+                  dir_y : float  (* directing vector, ordinate *) }
+

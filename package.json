@@ -1,0 +1,25 @@
+{
+  "name": "tree-sitter-heptagon",
+  "version": "1.0.0",
+  "description": "Tree sitter parser for heptagon",
+  "main": "bindings/node",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nan": "^2.18.0"
+  },
+  "tree-sitter": [
+    {
+      "scope": "source.ept",
+      "file-types": [
+        "ept"
+      ],
+      "highlights": [
+        "queries/highlights.scm"
+      ]
+    }
+  ]
+}

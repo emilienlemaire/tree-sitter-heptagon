@@ -1,0 +1,2218 @@
+[
+  {
+    "type": "ampersand",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "and",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "arobase",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "array_exp_list",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "array_exp_list",
+          "named": true
+        },
+        {
+          "type": "exp",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "arrow",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "assume",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "exp",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "automaton_handler",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "block_do",
+          "named": true
+        },
+        {
+          "type": "unless_escapes",
+          "named": true
+        },
+        {
+          "type": "until_escapes",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "automaton_handlers",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "automaton_handler",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "block_do",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "equs",
+          "named": true
+        },
+        {
+          "type": "loc_params",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "block_let",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "equs",
+          "named": true
+        },
+        {
+          "type": "loc_params",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "call_params",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "array_exp_list",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ck",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "on_ck",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ck_annot",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "ck",
+          "named": true
+        },
+        {
+          "type": "on_ck",
+          "named": true
+        },
+        {
+          "type": "when",
+          "named": true
+        },
+        {
+          "type": "when_ck",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "comma_sep_list",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "simple_exp",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "comma_sep_pat",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "comma_sep_pat",
+          "named": true
+        },
+        {
+          "type": "pat",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "const_",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "constructor_or_bool",
+          "named": true
+        },
+        {
+          "type": "float",
+          "named": true
+        },
+        {
+          "type": "int",
+          "named": true
+        },
+        {
+          "type": "qualified_ident",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "const_dec",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "equal",
+          "named": true
+        },
+        {
+          "type": "exp",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "ty_ident",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "constraints",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "semi_sep_list",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "constructor",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "qualified_ctor",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "constructor_or_bool",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "constructor",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "contract",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "assume",
+          "named": true
+        },
+        {
+          "type": "block_let",
+          "named": true
+        },
+        {
+          "type": "objective",
+          "named": true
+        },
+        {
+          "type": "with",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ct_annot",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "ck",
+          "named": true
+        },
+        {
+          "type": "on_ck",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "default",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "else_",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "enum_ty_desc",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "constructor",
+          "named": true
+        },
+        {
+          "type": "enum_ty_desc",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "equ",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "automaton_handlers",
+          "named": true
+        },
+        {
+          "type": "default",
+          "named": true
+        },
+        {
+          "type": "else_",
+          "named": true
+        },
+        {
+          "type": "equal",
+          "named": true
+        },
+        {
+          "type": "equs",
+          "named": true
+        },
+        {
+          "type": "exp",
+          "named": true
+        },
+        {
+          "type": "pat",
+          "named": true
+        },
+        {
+          "type": "present_handlers",
+          "named": true
+        },
+        {
+          "type": "switch_handlers",
+          "named": true
+        },
+        {
+          "type": "var_in",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "equal",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "equs",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "equ",
+          "named": true
+        },
+        {
+          "type": "equs",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "escape",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "exp",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "escape_sequence",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "escapes",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "escape",
+          "named": true
+        },
+        {
+          "type": "escapes",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "exp",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "ampersand",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "arobase",
+          "named": true
+        },
+        {
+          "type": "array_exp_list",
+          "named": true
+        },
+        {
+          "type": "arrow",
+          "named": true
+        },
+        {
+          "type": "comma_sep_list",
+          "named": true
+        },
+        {
+          "type": "constructor_or_bool",
+          "named": true
+        },
+        {
+          "type": "default",
+          "named": true
+        },
+        {
+          "type": "else_",
+          "named": true
+        },
+        {
+          "type": "equal",
+          "named": true
+        },
+        {
+          "type": "exp",
+          "named": true
+        },
+        {
+          "type": "exps",
+          "named": true
+        },
+        {
+          "type": "fby",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "indexes",
+          "named": true
+        },
+        {
+          "type": "infix0",
+          "named": true
+        },
+        {
+          "type": "infix1",
+          "named": true
+        },
+        {
+          "type": "infix2",
+          "named": true
+        },
+        {
+          "type": "infix3",
+          "named": true
+        },
+        {
+          "type": "infix4",
+          "named": true
+        },
+        {
+          "type": "iterator",
+          "named": true
+        },
+        {
+          "type": "less_greater",
+          "named": true
+        },
+        {
+          "type": "merge_handlers",
+          "named": true
+        },
+        {
+          "type": "node_name",
+          "named": true
+        },
+        {
+          "type": "not",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "power",
+          "named": true
+        },
+        {
+          "type": "pre",
+          "named": true
+        },
+        {
+          "type": "prefix",
+          "named": true
+        },
+        {
+          "type": "qualname",
+          "named": true
+        },
+        {
+          "type": "simple_exp",
+          "named": true
+        },
+        {
+          "type": "star",
+          "named": true
+        },
+        {
+          "type": "trunc_indexes",
+          "named": true
+        },
+        {
+          "type": "when",
+          "named": true
+        },
+        {
+          "type": "whenot",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "exps",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "exp",
+          "named": true
+        },
+        {
+          "type": "exps",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "fby",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "field_exp",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "equal",
+          "named": true
+        },
+        {
+          "type": "exp",
+          "named": true
+        },
+        {
+          "type": "qualname",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "field_exp_list",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "field_exp",
+          "named": true
+        },
+        {
+          "type": "field_exp_list",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ident_list",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "identifier",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "indexes",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "exp",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "infix0",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "infix1",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "infix2",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "infix3",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "infix4",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "int",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "iterator",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "label_ty",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "ty_ident",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "label_ty_list",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "label_ty",
+          "named": true
+        },
+        {
+          "type": "label_ty_list",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "less_greater",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "loc_params",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "loc_params",
+          "named": true
+        },
+        {
+          "type": "var_last",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "located_ty_ident",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "ty_ident",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "merge_handler",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "arrow",
+          "named": true
+        },
+        {
+          "type": "constructor_or_bool",
+          "named": true
+        },
+        {
+          "type": "exp",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "merge_handlers",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "merge_handler",
+          "named": true
+        },
+        {
+          "type": "simple_exp",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "modul",
+    "named": true,
+    "fields": {
+      "qualifier": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "modul",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "node_dec",
+    "named": true,
+    "fields": {
+      "body": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "block_let",
+            "named": true
+          }
+        ]
+      },
+      "contract": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "contract",
+            "named": true
+          }
+        ]
+      },
+      "in_params": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "nonmt_params",
+            "named": true
+          }
+        ]
+      },
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      },
+      "out_params": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "nonmt_out_params",
+            "named": true
+          }
+        ]
+      },
+      "params": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "node_params",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "node_or_fun",
+          "named": true
+        },
+        {
+          "type": "returns",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "node_name",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "call_params",
+          "named": true
+        },
+        {
+          "type": "qualname",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "node_or_fun",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "node_params",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "constraints",
+          "named": true
+        },
+        {
+          "type": "nonmt_params",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "nonmt_out_params",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "nonmt_out_params",
+          "named": true
+        },
+        {
+          "type": "var_last",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "nonmt_params",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "nonmt_params",
+          "named": true
+        },
+        {
+          "type": "param",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "not",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "objective",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "exp",
+          "named": true
+        },
+        {
+          "type": "objective_kind",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "objective_kind",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "on_ck",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "ck",
+          "named": true
+        },
+        {
+          "type": "constructor_or_bool",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "opens",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "modul",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "or",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "param",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "ck_annot",
+          "named": true
+        },
+        {
+          "type": "ident_list",
+          "named": true
+        },
+        {
+          "type": "located_ty_ident",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "param_signature",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "located_ty_ident",
+          "named": true
+        },
+        {
+          "type": "sig_ck_annot",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "params_signature",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "param_signature",
+          "named": true
+        },
+        {
+          "type": "params_signature",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "pat",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "comma_sep_pat",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "power",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "pre",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prefix",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "present_handler",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "block_do",
+          "named": true
+        },
+        {
+          "type": "exp",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "present_handlers",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "present_handler",
+          "named": true
+        },
+        {
+          "type": "present_handlers",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "program_desc",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "const_dec",
+          "named": true
+        },
+        {
+          "type": "node_dec",
+          "named": true
+        },
+        {
+          "type": "type_dec",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "qualified_ctor",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "modul",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "qualified_ident",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "modul",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "qualname",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "qualified_ident",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "returns",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "equal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "semi_sep_list",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "exp",
+          "named": true
+        },
+        {
+          "type": "semi_sep_list",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "sig_ck_annot",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "ck",
+          "named": true
+        },
+        {
+          "type": "on_ck",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "simple_exp",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "array_exp_list",
+          "named": true
+        },
+        {
+          "type": "const_",
+          "named": true
+        },
+        {
+          "type": "ct_annot",
+          "named": true
+        },
+        {
+          "type": "exp",
+          "named": true
+        },
+        {
+          "type": "field_exp_list",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "qualname",
+          "named": true
+        },
+        {
+          "type": "simple_exp",
+          "named": true
+        },
+        {
+          "type": "tuple_exp",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "opens",
+          "named": true
+        },
+        {
+          "type": "program_desc",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "star",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "string",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "string_content",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "string_content",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "conversion_specification",
+          "named": true
+        },
+        {
+          "type": "escape_sequence",
+          "named": true
+        },
+        {
+          "type": "pretty_printing_indication",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "struct_ty_desc",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "label_ty_list",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "switch_handler",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "block_do",
+          "named": true
+        },
+        {
+          "type": "constructor_or_bool",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "switch_handlers",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "switch_handler",
+          "named": true
+        },
+        {
+          "type": "switch_handlers",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "trunc_indexes",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "exp",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "tuple_exp",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "exp",
+          "named": true
+        },
+        {
+          "type": "tuple_exp",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ty_ident",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "power",
+          "named": true
+        },
+        {
+          "type": "qualname",
+          "named": true
+        },
+        {
+          "type": "simple_exp",
+          "named": true
+        },
+        {
+          "type": "ty_ident",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "type_dec",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "enum_ty_desc",
+          "named": true
+        },
+        {
+          "type": "equal",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "struct_ty_desc",
+          "named": true
+        },
+        {
+          "type": "ty_ident",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "unless_escapes",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "escapes",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "until_escapes",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "escapes",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "var_in",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "loc_params",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "var_last",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "ck_annot",
+          "named": true
+        },
+        {
+          "type": "equal",
+          "named": true
+        },
+        {
+          "type": "exp",
+          "named": true
+        },
+        {
+          "type": "ident_list",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "located_ty_ident",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "when",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "when_ck",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "constructor_or_bool",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "not",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "whenot",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "with",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "nonmt_params",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "\"",
+    "named": false
+  },
+  {
+    "type": "&",
+    "named": false
+  },
+  {
+    "type": "(",
+    "named": false
+  },
+  {
+    "type": ")",
+    "named": false
+  },
+  {
+    "type": ")>",
+    "named": false
+  },
+  {
+    "type": "*",
+    "named": false
+  },
+  {
+    "type": ",",
+    "named": false
+  },
+  {
+    "type": "-",
+    "named": false
+  },
+  {
+    "type": "-.",
+    "named": false
+  },
+  {
+    "type": "->",
+    "named": false
+  },
+  {
+    "type": ".",
+    "named": false
+  },
+  {
+    "type": "..",
+    "named": false
+  },
+  {
+    "type": "...",
+    "named": false
+  },
+  {
+    "type": ":",
+    "named": false
+  },
+  {
+    "type": "::",
+    "named": false
+  },
+  {
+    "type": ";",
+    "named": false
+  },
+  {
+    "type": "<(",
+    "named": false
+  },
+  {
+    "type": "<<",
+    "named": false
+  },
+  {
+    "type": "<>",
+    "named": false
+  },
+  {
+    "type": "<]",
+    "named": false
+  },
+  {
+    "type": "=",
+    "named": false
+  },
+  {
+    "type": ">>",
+    "named": false
+  },
+  {
+    "type": "@",
+    "named": false
+  },
+  {
+    "type": "[",
+    "named": false
+  },
+  {
+    "type": "[>",
+    "named": false
+  },
+  {
+    "type": "]",
+    "named": false
+  },
+  {
+    "type": "^",
+    "named": false
+  },
+  {
+    "type": "and",
+    "named": false
+  },
+  {
+    "type": "asr",
+    "named": false
+  },
+  {
+    "type": "assume",
+    "named": false
+  },
+  {
+    "type": "at",
+    "named": false
+  },
+  {
+    "type": "attractive",
+    "named": false
+  },
+  {
+    "type": "automaton",
+    "named": false
+  },
+  {
+    "type": "comment",
+    "named": true
+  },
+  {
+    "type": "const",
+    "named": false
+  },
+  {
+    "type": "continue",
+    "named": false
+  },
+  {
+    "type": "contract",
+    "named": false
+  },
+  {
+    "type": "conversion_specification",
+    "named": true
+  },
+  {
+    "type": "default",
+    "named": false
+  },
+  {
+    "type": "do",
+    "named": false
+  },
+  {
+    "type": "done",
+    "named": false
+  },
+  {
+    "type": "else",
+    "named": false
+  },
+  {
+    "type": "end",
+    "named": false
+  },
+  {
+    "type": "enforce",
+    "named": false
+  },
+  {
+    "type": "every",
+    "named": false
+  },
+  {
+    "type": "external",
+    "named": false
+  },
+  {
+    "type": "false",
+    "named": false
+  },
+  {
+    "type": "fby",
+    "named": false
+  },
+  {
+    "type": "float",
+    "named": true
+  },
+  {
+    "type": "fold",
+    "named": false
+  },
+  {
+    "type": "foldi",
+    "named": false
+  },
+  {
+    "type": "fun",
+    "named": false
+  },
+  {
+    "type": "if",
+    "named": false
+  },
+  {
+    "type": "in",
+    "named": false
+  },
+  {
+    "type": "init",
+    "named": false
+  },
+  {
+    "type": "inlined",
+    "named": false
+  },
+  {
+    "type": "land",
+    "named": false
+  },
+  {
+    "type": "last",
+    "named": false
+  },
+  {
+    "type": "let",
+    "named": false
+  },
+  {
+    "type": "lor",
+    "named": false
+  },
+  {
+    "type": "lsl",
+    "named": false
+  },
+  {
+    "type": "lsr",
+    "named": false
+  },
+  {
+    "type": "map",
+    "named": false
+  },
+  {
+    "type": "mapfold",
+    "named": false
+  },
+  {
+    "type": "mapi",
+    "named": false
+  },
+  {
+    "type": "merge",
+    "named": false
+  },
+  {
+    "type": "mod",
+    "named": false
+  },
+  {
+    "type": "node",
+    "named": false
+  },
+  {
+    "type": "not",
+    "named": false
+  },
+  {
+    "type": "on",
+    "named": false
+  },
+  {
+    "type": "onot",
+    "named": false
+  },
+  {
+    "type": "open",
+    "named": false
+  },
+  {
+    "type": "or",
+    "named": false
+  },
+  {
+    "type": "pre",
+    "named": false
+  },
+  {
+    "type": "present",
+    "named": false
+  },
+  {
+    "type": "pretty_printing_indication",
+    "named": true
+  },
+  {
+    "type": "quo",
+    "named": false
+  },
+  {
+    "type": "reachable",
+    "named": false
+  },
+  {
+    "type": "reset",
+    "named": false
+  },
+  {
+    "type": "returns",
+    "named": false
+  },
+  {
+    "type": "split",
+    "named": false
+  },
+  {
+    "type": "state",
+    "named": false
+  },
+  {
+    "type": "switch",
+    "named": false
+  },
+  {
+    "type": "tel",
+    "named": false
+  },
+  {
+    "type": "then",
+    "named": false
+  },
+  {
+    "type": "true",
+    "named": false
+  },
+  {
+    "type": "type",
+    "named": false
+  },
+  {
+    "type": "unless",
+    "named": false
+  },
+  {
+    "type": "unsafe",
+    "named": false
+  },
+  {
+    "type": "until",
+    "named": false
+  },
+  {
+    "type": "val",
+    "named": false
+  },
+  {
+    "type": "var",
+    "named": false
+  },
+  {
+    "type": "when",
+    "named": false
+  },
+  {
+    "type": "whenot",
+    "named": false
+  },
+  {
+    "type": "with",
+    "named": false
+  },
+  {
+    "type": "xor",
+    "named": false
+  },
+  {
+    "type": "{",
+    "named": false
+  },
+  {
+    "type": "|",
+    "named": false
+  },
+  {
+    "type": "}",
+    "named": false
+  }
+]
